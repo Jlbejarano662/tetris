@@ -36,7 +36,7 @@ if(screen.height >= 992){
     canvas.width = 400;
     canvas.height = 800;
     contex.scale(40, 40); //Filas y columnas
-} else if (screen.height >=650 && screen.height <992){
+} else if (screen.height >=650 && screen.height < 992){
   //tamaño al canvas
     canvas.width = 300;
     canvas.height = 600;
@@ -227,6 +227,8 @@ function playGame(id, modal){
         } 
     });
     alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height);
+    alert("La resolución de tu ventana es: " + window.innerWidth + " x " + window.innerHeight);
+    alert("La resolución de tu página web es: " + document.documentElement.scrollWidth + " x " + document.documentElement.scrollHeight);
 }
 //función para salir del juego 
 function exitGame(id){
