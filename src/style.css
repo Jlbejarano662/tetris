@@ -38,7 +38,7 @@ body {
 }
 
 .cont-canvas{
-     height: 625px;
+     height: 810px;
 }
 
 /* Reescribir algunos estilos */
@@ -169,6 +169,9 @@ body {
     .text {
         font-size: 1.25rem;
     }
+    .cont-canvas{
+        height: 610px;
+   }
 
 }
 @media (max-height: 649px) {
@@ -194,9 +197,9 @@ body {
     .botones button {
         margin: 1%;
     }
-    .cont-canvas {
-        height: auto;
-    }
+    .cont-canvas{
+        height: 410px;
+   }
     .modal-body {
         font-size: 1rem;
     }
