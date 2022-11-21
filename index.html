@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tetris</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/da46a4ed1a.js" crossorigin="anonymous"></script>
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body id="body">
+    <div class="content">
+        <div class="cont-canvas">
+            <canvas id="tetris"  ></canvas>  
+        </div>
+        <div class="text">
+            <div class="next">Next Piece:</div>
+            <canvas id="nextPiece" width="100px" height="100px"></canvas> <br>
+            <div>Score:</div>
+            <div id="score"></div>
+            <div>Lines:</div>
+            <div id="lines"></div>
+            <div>Level:</div>
+            <div id="level"></div>
+            <br>
+            <button onclick="pausar()" class="btn btn-play">Pause / Play</button>
+        </div>   
+
+    </div>
+    <div class="botones">
+        <button><i id="left" class="fa-solid fa-arrow-left"></i></button>
+        <button><i id="right" class="fa-solid fa-arrow-right"></i></button>
+        <button><i id="down" class="fa-solid fa-arrow-down"></i></button>
+        <button><i id="up" class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h1>Welcome Tetris</h1>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h2>Move left</h2>
+            <i class="fa-solid fa-arrow-right"></i>
+            <h2>Move rigth</h2>
+            <i class="fa-solid fa-arrow-down"></i>
+            <h2>Move down</h2>
+            <i class="fa-solid fa-arrow-up"></i>
+            <h2>Card rotation</h2>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" id="btn-play" class="btn btn-pla2 btn-lg">Play game</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <!-- The Modal Game Over --> 
+    <div class="modal" id="myModal2"> 
+        <div class="modal-dialog modal-dialog-centered"> 
+          <div class="modal-content"> 
+       
+            <!-- Modal Header --> 
+            <div class="modal-header"> 
+              <h1>Game Over</h1> 
+            </div> 
+       
+            <!-- Modal body --> 
+            <div class="modal-body"> 
+              <p>Play again?</p> 
+            </div> 
+       
+            <!-- Modal footer --> 
+            <div class="modal-footer"> 
+              <button type="button" id="btn-again-yes" class="btn btn-play btn-lg">Yes</button> 
+              <button type="button" id="btn-again-no" class="btn btn-play btn-lg">No</button> 
+            </div> 
+       
+          </div> 
+        </div> 
+      </div>
+    <!-- <div class="modal-backdrop"></div> -->
+    <script src="src/script.js"></script>
+</body>
+</html>
