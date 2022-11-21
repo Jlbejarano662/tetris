@@ -226,9 +226,6 @@ function playGame(id, modal){
             updateScore();
         } 
     });
-    alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height);
-    alert("La resolución de tu ventana es: " + window.innerWidth + " x " + window.innerHeight);
-    alert("La resolución de tu página web es: " + document.documentElement.scrollWidth + " x " + document.documentElement.scrollHeight);
 }
 //función para salir del juego 
 function exitGame(id){
